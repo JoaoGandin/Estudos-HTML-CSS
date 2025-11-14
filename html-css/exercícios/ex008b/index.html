@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outras formatações</title>
+  </head>
+  <body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>
+      O comando <code>document.getElementById('teste')</code> é escrito em
+      linguagem JavaScript. A tag usada foi o <mark>&lt;code&gt;</mark>. Mas a
+      tag
+      <mark>&lt;code&gt;</mark>
+      não faz a identação, por exemplo:
+    </p>
+    <code>
+      num = int(input('Difite um número')) if num % 2 == 0: print(f'O número
+      {num} é PAR') else: print(f'O número {num} é IMPAR') print('Fim do
+      programa')
+    </code>
+    <p>
+      para fazer uma identação utiliza-se a tag <mark>&lt;pre&gt;</mark>, tudo
+      que estiver dentro do <mark>&lt;pre&gt;</mark> ele irá considerar, quebra
+      de linhas, tabulação, quebra de linhas, etc. Por exemplo:
+    </p>
+    <pre>
+      <code>
+  num = int(input('Difite um número')) 
+
+  if num % 2 == 0: 
+    print(f'O número{num} é PAR') 
+  else: 
+    print(f'O número {num} é IMPAR') 
+  print('Fim do programa')
+      </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>
+      Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>
+    </p>
+    <p>
+      Quando for uma citação utiliza a tag <mark>&lt;q&gt;</mark> para dar
+      sentido para o HTML5 invés de usar "", claro se for uma outra coisa "mais
+      ou menos interessante" ai pode usar aspas
+      <img
+        src="aspas.jpg"
+        alt="aspas"
+        style="max-width: 30px"
+        title="aspas (é meme)"
+      />.
+    </p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="">
+      A diferença entre elementos inline e um bloco de texto é importante. Os
+      elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <p>
+      A tag utilizada foi <mark>&lt;blockquote&gt;</mark>, esta tag tem um
+      parametro <mark>&lt;blockquote cite=""&gt;</mark> que é para colocar o
+      link do livro do autor, ou outra coisa ai, para manter os direitos daquele
+      que produzem conteúdos.
+    </p>
+    <h2>Abreviações</h2>
+    <p>
+      Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e
+      <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!
+    </p>
+    <p>
+      A tag utilizada foi <mark>&lt;abbr&gt;</mark> que tambem gera um
+      paramentro para colocar um title,
+      <mark>&lt;abbr title="HyperText Markup Language"&gt;</mark>, ai quando
+      passa o cursor em cima da palavra abreviada aparece o significado dela.
+    </p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <p>
+      a tag usada foi a <mark>&lt;bdo&gt</mark>; que tem o parametrodir=""
+      <mark>dir=""</mark> para indicar se é rtl (right to left) ou ltr (left to
+      right).
+    </p>
+  </body>
+</html>

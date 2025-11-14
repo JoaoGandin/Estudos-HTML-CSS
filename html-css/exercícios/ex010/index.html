@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com links</title>
+  </head>
+  <body>
+    <h1>Usando links externos</h1>
+    <p>
+      Você pode acessar meu
+      <a href="https://github.com/JoaoGandin" target="_blank" rel="external"
+        >repositório público no GitHub</a
+      >
+    </p>
+    <p>
+      &lt;a href="https://github.com/JoaoGandin" target="_blank"
+      rel="external"&gt;
+    </p>
+    <p>
+      <mark>&lt;a&gt;</mark> é a tag de âncora usada para criar links,
+      direcionando o user para outras páginas internas ou externas. Esse
+      <mark>href=""</mark> ai é aonde vai colocar o link de referencia.
+      Target="_blank" é para abrir o link externo em uma nova guia. Esse
+      <mark>rel="external"</mark> é para indicar que o link é um link externo.
+    </p>
+    <h1>Usandos links internos</h1>
+    <p>
+      Está é a primeira página do site. Se você quiser, pode acessar também a
+      minha <a href="pag002.html" target="_self" rel="next">segunda página</a>
+    </p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="">página de notícias</a></p>
+    <p>
+      aqui você pode usar o <mark>rel="next"</mark> que indica que o link leva
+      para a próxima página e se caso você quiser voltar para a página anterior
+      você indica com <mark>rel="prev"</mark> (prev = previous)
+    </p>
+    <h2>rel=""</h2>
+    <p>
+      esse rel ai é necessario, pois ele indica para o google qual é a próxima
+      pág. ou a pág anterior ou externa, ele da um valor para o link, ele tem
+      uma sêmantica
+      <ul>
+        <li>rel="external"</li>
+        <p>indica que o link é um link externo</p>
+        <li>rel="next"</li>
+        <p>indica que o link leva para um outro arquivo da página</p>
+        <li>rel="prev"</li>
+        <p>indica que o link volta para o outro arquivo da página</p>
+        <li>rel="nofollow"</li>
+        <p>indica que o mecanismo de busca não precisa indexar esse site. Você está dizendo para o mecanismo de busca que você não da um aval para esse conteúdo.</p>
+      </ul>
+    </p>
+    <h1>Links para download</h1>
+    <ul>
+      <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf"  >baixar o livro em PDF</a></li>
+      <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">baixar o livro em ZIP</a></li>
+    </ul>
+  </body>
+</html>

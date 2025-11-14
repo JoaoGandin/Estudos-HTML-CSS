@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+    <style>
+      mark {
+        background-color: rgba(13, 156, 238, 0.219);
+      }
+      </style>
+  </head>
+  <body>
+    <h1>Trabalhando com listas</h1>
+    <a href="exercicio009.html">exercicio009</a>
+    <h2>Listas Ordenadas &lt;ol&gt;</h2>
+    <ol type="i">
+      <li>Acordar</li>
+      <li>Ligar para o João</li>
+      <li>Tomar café</li>
+      <li>Escovar os dentes</li>
+      <li>Ir para a faculdade</li>
+      <li>Almoçar</li>
+      <li>Ir para o trabalho</li>
+    </ol>
+    <p>
+      O <mark>&lt;ol&gt;</mark> significa que é uma lista ordenada e para
+      colocar os itens dentro dessa lista você utiliza o <mark>&lt;li&gt;</mark>
+    </p>
+    <p>
+      as listas tem uns parâmetros que pode colocar no &lt;ol&gt; que é o <mark>type=""</mark> onde tem vários tipos de marcação, como:
+      <ul>
+        <li><mark>type="1" (padrão)</mark> (números)</li>
+        <li><mark>type="A"</mark> (letras maiúsculas)</li>
+        <li><mark>type="a"</mark> (letras minúsculas)</li>
+        <li><mark>type="I"</mark> (números romanos maiúsculos)</li>
+        <li><mark>type="i"</mark> (números romanos minúsculos)</li>
+      </ul>
+      O <mark>start=""</mark> serve para definir o número inicial da lista. Porém quando você for usar por exemplo o type="a". 
+      <br>
+      O start="" tambem tem que ser númerico por exemplo:
+      &lt;ol type="a" start="3"&gt; (vai começar do "c" que é o terceiro item do alfabeto)
+    </p>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="">
+      <li>Pão</li>
+      <li>Leite</li>
+      <li>Tomate</li>
+      <li>Manteiga</li>
+      <li>Arroz</li>
+      <li>Feijão</li>
+    </ul>
+    <p>
+      O <mark>&lt;ul&gt;</mark> significa que é uma listanão ordenada e para
+      colocar os itens dentro dessa lista você tambem utiliza o <mark>&lt;li&gt;.</mark>
+    </p>
+    <p>Parâmetros da ul:
+      <ul>
+        <li><mark>type=""</mark></li> 
+        <ul type="">
+          <li>disc (padrão)</li>
+          <li>circle</li>
+          <li>square</li>
+        </ul>
+      </ul>
+    </p>
+
+    <h2>Listas mistas / listas dentro de lista</h2>
+    <ol>
+      <li>Teste</li>
+      <ol type="A">
+        <li>Teste 1.1</li>
+        <li>Teste 1.2</li>
+        <li>Teste 1.3</li>
+        <li>Teste 1.4</li>
+        <ol type="a">
+          <li>Teste 1.4.1</li>
+          <li>Teste 1.4.2</li>
+          <li>Teste 1.4.3</li>
+        </ol>
+        <li>Teste 1.5</li>
+      </ol>
+      <li>Teste 2</li>
+      <ol type="A" start="6"> <!--É INCORRETO deixar a lista começar do 6 portanto iremos deixar para lembrar que esse parametro start ai existe tmj ✌️✌️-->
+        <li>Teste 2.1</li>
+        <li>Teste 2.2</li>
+        <li>Teste 2.3</li>
+        <li>Teste 2.4</li>
+      </ol>
+    </ol>
+
+    <h2>lista de Definições</h2>
+    <dl>
+      <dt>Termo</dt>
+      <dd>Descrição</dd>
+    </dl>
+    <p>
+      O <mark>&lt;dl&gt;</mark> significa que é uma description list e para
+      colocar os itens/termos dentro dessa lista você utiliza o <mark>&lt;dt&gt;.</mark> que define o termo (nome) e o <mark>&lt;dd&gt;.</mark> que define a descrição do termo.
+    </p>
+    <p>Por exemplo:</p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem de marcação para a criação do design de um site.</dd>
+      <dt>JavaScript</dt>
+      <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+  </body>
+</html>
