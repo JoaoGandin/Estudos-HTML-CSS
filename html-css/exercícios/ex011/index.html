@@ -40,5 +40,22 @@
       &lt;source&gt; for compatível, ele usa o src da tag &lt;img&gt; aninhada
       como fallback.
     </p>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!-- <audio src="media/happy-mistake.mp3" controls></audio> -->
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" controls>
+      <source src="media/guanacast-33.mp3" type="audio/mpeg" />
+      <source src="media/guanacast-33.ogg" type="audio/ogg" />
+      <source src="media/guanacast-33.wav" type="audio/wav" />
+      <!--ele vai tentar carregar o mp3 primeiro dps ogg e depois wav-->
+      <p>
+        Infelizmente seu navegador não consegue reproduzir áudio.
+        <a href="media/guanacast-33.mp3"
+          >Clique aqui para baixar o arquivo MP3</a
+        >
+      </p>
+    </audio>
   </body>
 </html>
