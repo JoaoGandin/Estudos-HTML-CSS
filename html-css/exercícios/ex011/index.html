@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+      <!-- tem que está em ordem por exemplo abaixo a imagem p vem primeiro depois a m e depois a g -->
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m.png"
+        type="image/png"
+      />
+      <img src="imagens/foto-g.png" alt="Imagem flexível" />
+    </picture>
+
+    <p>
+      A tag &lt;picture&gt; é utilizada para permitir a exibição de imagens
+      responsivas
+    </p>
+
+    <p>
+      &lt;source&gt;: O navegador avalia cada elemento &lt;source&gt; dentro de
+      &lt;picture&gt; em ordem. Ele seleciona o primeiro que corresponde às
+      condições especificadas (geralmente através de atributos media ou type) e
+      carrega o arquivo de imagem correspondente. Se nenhuma das tags
+      &lt;source&gt; for compatível, ele usa o src da tag &lt;img&gt; aninhada
+      como fallback.
+    </p>
+  </body>
+</html>
