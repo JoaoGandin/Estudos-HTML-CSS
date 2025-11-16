@@ -8,12 +8,50 @@
   <body>
     <h1>Inserindo vídeos hospedados localmente</h1>
     <p>Este vídeo está hospedado no meu próprio servidor.</p>
-    <video width="500" poster="imagens/limoes-capa.png" controls>
+    <video width="560" poster="imagens/limoes-capa.png" autoplay controls loop>
       <source src="media/meu-video.mp4" type="video/mp4" />
       <source src="media/meu-video.m4v" type="video/mp4" />
       <source src="media/meu-video.webm" type="video/webm" />
       <source src="media/meu-video.ogv" type="video/ogv" />
       <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
     </video>
+    <p>
+      Cuidado, se seu site tiver um uso médio de 1k de pessoas e o video, por
+      exemplo o .mp4 que pesa 11,5 MB, que é 11.500 MB (11,5 * 1k) que é 11,2 GB
+      de consumo de banda.<br />E ter esse consumo muito grande pode pesar no
+      bolso do seu cliente. Então explique esse problema pro seu cliente, que
+      esses vídeos hospedados dessa maneira, usando a tag &lt;video&gt;, podem e
+      vão consumir muito tráfego de dados que acaba ficando caro pro cliente.
+    </p>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <!-- Inserir vídeos do YouTube é mais barato que hospedar o vídeo no proprio site -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/CIF-r7F2clc?si=-8doWR040VLrqwZf"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <p>
+      O cliente quando clica no vídeo ele tá consumindo dados do YouTube
+      (economiza o consumo de dados do seu site).
+    </p>
+    <p>
+      Existem outros serviços que oferecem para você hospedar os vídeos no seu
+      site, só que ele torna os vídeos exclusivos. Como o
+      <a
+        href="https://vimeo.com/pt-br?adgroupid=170169842155&campaignid=21847104890&device=c&gad_campaignid=21847104890&gad_source=1&gbraid=0AAAAADs6su19PlVbADCjtOpBJ8a1wtz-7&gclid=Cj0KCQiAiebIBhDmARIsAE8PGNLgTGVkq0eDFZ6CqNkRXkQ5y1dhXBWBHVsxz9Q_5fCbRNAR2pGC_5waAvYdEALw_wcB&gclsrc=aw.ds&utm_adgroup=Vimeo&utm_campaign=Core_Search_INTL_BR-PT_Google_Buy_Brand_Evergreen&utm_medium=cpc&utm_source=google&utm_term=vimeo/"
+        target="_blank"
+        >Vimeo.com</a
+      >
+      O Vimeo tem a vantagem de qualidade do vídeo, mas a desvantagem que o
+      algoritmo dele não é tão bom quanto do YouTube, então isso é, ele tem uma
+      ótima qualidade mas o codec dele não é tão bom, então o vídeo da umas
+      travadinhas se a internet sua ou do cliente não for boa.
+    </p>
   </body>
 </html>
