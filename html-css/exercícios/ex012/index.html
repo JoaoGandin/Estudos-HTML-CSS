@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vídeos com HTML5</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="imagens/limoes-capa.png" controls>
+      <source src="media/meu-video.mp4" type="video/mp4" />
+      <source src="media/meu-video.m4v" type="video/mp4" />
+      <source src="media/meu-video.webm" type="video/webm" />
+      <source src="media/meu-video.ogv" type="video/ogv" />
+      <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+  </body>
 </html>
