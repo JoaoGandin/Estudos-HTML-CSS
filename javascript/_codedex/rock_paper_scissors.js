@@ -23,7 +23,7 @@ if (computerNum === 0){
 console.log("Player picked: " + player);
 console.log("Computer picked: " + computer)
 
-
+// jeito inicial feito:
 // if (playerNum === 0 && computerNum === 2){
 //   console.log("The Player won!")
 // } else if (playerNum === 2 && computerNum === 1){
@@ -35,6 +35,8 @@ console.log("Computer picked: " + computer)
 // } else {
 //   console.log("The computer won!")
 // }
+
+//simplificado:
 if ((playerNum === 0 && computerNum === 2) || 
     (playerNum === 2 && computerNum === 1) || 
     (playerNum === 1 && computerNum === 0)){
