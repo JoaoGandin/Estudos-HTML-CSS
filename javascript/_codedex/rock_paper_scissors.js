@@ -24,13 +24,22 @@ console.log("Player picked: " + player);
 console.log("Computer picked: " + computer)
 
 
-if (playerNum === 0 && computerNum === 2){
-  console.log("The Player won!")
-} else if (playerNum === 2 && computerNum === 1){
-  console.log("The Player won!")
-} else if (playerNum === 1 && computerNum === 0){
-  console.log("The Player won!")
-} else if (playerNum === computerNum){
+// if (playerNum === 0 && computerNum === 2){
+//   console.log("The Player won!")
+// } else if (playerNum === 2 && computerNum === 1){
+//   console.log("The Player won!")
+// } else if (playerNum === 1 && computerNum === 0){
+//   console.log("The Player won!")
+// } else if (playerNum === computerNum){
+//   console.log("draw")
+// } else {
+//   console.log("The computer won!")
+// }
+if ((playerNum === 0 && computerNum === 2) || 
+    (playerNum === 2 && computerNum === 1) || 
+    (playerNum === 1 && computerNum === 0)){
+    console.log("The Player won!")
+} else if(playerNum === computerNum){
   console.log("draw")
 } else {
   console.log("The computer won!")
