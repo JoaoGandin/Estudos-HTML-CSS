@@ -23,10 +23,12 @@ console.log("Telefone: ", telefone);
 
 // resultado diferente, pois o undefined não é um número.
 // console.log("Telefone: ", telefone * 2);
-// saída: NaN (Not a Number).
+// saída: NaN (Not a Number). Aparece quando multiplica com undefined e uma String.
 
 if(telefone){
     console.log("Telefone: ", telefone * 2);
 } else {
     console.log("Telefone não existe.");
 }
+
+// NULL e UNDEFINED => são tratados como False em contextos booleanos.
