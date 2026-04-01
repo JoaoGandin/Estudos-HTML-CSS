@@ -23,7 +23,7 @@ console.log("Telefone: ", telefone);
 
 // resultado diferente, pois o undefined não é um número.
 // console.log("Telefone: ", telefone * 2);
-// saída: NaN (Not a Number). Aparece quando multiplica com undefined e uma String.
+// saída: NaN (Not a Number). Aparece quando multiplica com undefined e uma String (quando for texto, como o nome), mas se for um número entre aspas ele consegue ser multiplicado por conta da coerção de dados.
 
 if(telefone){
     console.log("Telefone: ", telefone * 2);
@@ -32,3 +32,10 @@ if(telefone){
 }
 
 // NULL e UNDEFINED => são tratados como False em contextos booleanos.
+
+//Coerção de dados meio que transforma o dado, por exemplo em um if(nome), mesmo que seja úma string ele irá transforma em boolean para avaliar a condicional e se for um let num = "2", ele vai verificar e ver se consegue converter para o tipo number para realizar alguma operação matemática com essa String "2".
+
+let num = "2";
+
+console.log("tipo da variável num:", typeof(num));
+console.log("multiplicação:", num * 2);
