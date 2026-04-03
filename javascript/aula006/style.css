@@ -1,0 +1,21 @@
+body{
+    background-color: cornsilk;
+    font: normal 20pt Arial;
+}
+
+h1{
+    color: #1fabcf;
+}
+
+p{
+    color: #1faba2
+}
+
+button{
+    border: solid 2px green;
+    border-radius: 4px;
+    color: darkslategray;
+    width: 90px;
+    height: 24px;
+    background-color: burlywood;
+}
