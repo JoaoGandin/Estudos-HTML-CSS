@@ -10,12 +10,14 @@
     <p>Digite seu país onde nasceu: <input type="text" name="nacionalidade" id="nacionalidade"></p>
     <input type="button" onclick="verificadorDeNacionalidade3000()" value="VERIFICAR SE SOU ESTRANGEIRO OU NÃO!">
     <p>Você ainda mora nesse País?</p>
-    Sim<input type="radio" name="moraRes" id="moraRes" value="yes">
-    Não<input type="radio" name="moraRes" id="moraRes" value="no">
+    Sim<input type="radio" name="moraRes" id="moraSim" value="yes">
+    Não<input type="radio" name="moraRes" id="moraNao" value="no">
     <div id="res"></div>
+    <div id="res2"></div>
 
     <script>
         var res = document.querySelector("div#res");
+        var res2 = document.querySelector("div#res2");
         function verificadorDeNacionalidade3000(){
             var país = document.getElementById("nacionalidade").value;
 
@@ -25,22 +27,23 @@
                 res.innerHTML = `<p>Você é <strong>brasileiroooooo</strong></p>`;
             }
 
-            var moraRes = document.querySelector('input[id="moraRes"]:checked').value;
+            var moraRes = document.querySelector('input[name="moraRes"]:checked').value;
             if(moraRes == "yes"){
                 res.innerHTML += `Você mora no(a) ${país}`;
             } else {
                 res.innerHTML += 
                 `
-                Você mora em qual país atualmente?
+                <p>Você mora em qual país atualmente?</p>
                 <input type="text" name="local" id="local">
                 <input type="button" onclick="descobridorDosSeteMares()" value="enviar">
                 `;
-                var local = document.getElementById("local");
+                
             }
             
         }
         function descobridorDosSeteMares(){
-            res.innerHTML += `Você mora nesse país: ${local.value}`
+            var localAtual = document.getElementById("local").value;
+            res2.innerHTML = `<p>Você mora nesse país: ${localAtual}</p>`
         }
     </script>
 </body>
