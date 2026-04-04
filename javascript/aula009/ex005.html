@@ -16,7 +16,45 @@
     <h1>Iniciando os estudos com o DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
-    <script></script>
+    <div id="msg">Elemento selecionando por id</div>
+    <div name="nameMsg">Elemento selecionando por name</div>
+    <div class="classMsg">Elemento selecionando por classe</div>
+    <div id="msg1">Elemento selecionando por seletor usando id (#)</div>
+    <div class="msg2">Elemento selecionando por seletor usando classe (.)</div>
+    <script>
+        // quando é plural "Elements" utilizamos o [] para indicar qual queremos, se é o primeiro(0), segundo(1)...
+        //selecionando pela tag
+        var p1 = window.document.getElementsByTagName("p")[0];
+
+        //selecionando pelo id
+        var d = window.document.getElementById("msg");
+        d.style.background = "green";
+        d.innerText = "Este elemento foi selecionado por Id."
+
+        //selecionando pelo name
+        var dname = window.document.getElementsByName("nameMsg")[0];
+        dname.style.color = "lightBlue";
+        dname.innerText = "Este elemento foi selecionado pelo name.";
+
+        //selecionando pela classe
+        var dclass = window.document.getElementsByClassName("classMsg")[0];
+        dclass.style.color = "black";
+        dclass.style.background = "cyan";
+        dclass.innerText = "Este elemento foi selecionado pela classe.";
+
+        //selecionando pelo querySelector (seletor CSS)
+        // para selecionar por id -> "#", exemplo ("div#msg1")
+        // para selecionar por classe -> "." exemplo ("div.msg2")
+        var dqueryId = window.document.querySelector("div#msg1");
+        var dqueryClass = window.document.querySelector("div.msg2");
+
+        dqueryId.style.background = "orange";
+        dqueryId.style.color = "#0101ff"
+
+        dqueryClass.style.background = "white";
+        dqueryClass.style.color = "darkorange"
+
+
+    </script>
 </body>
 </html>
