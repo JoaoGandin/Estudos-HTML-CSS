@@ -12,7 +12,7 @@ const nomeDaFuncao = (param1, param2, param3) => {
 ```
 ---
 Mas podemos simplificar as Arrow Functions:
-- Quando tem **APENAS UMA** (e somente uma) **instrução**, é opcional o uso das chaves (`{}`):
+- Quando tem **APENAS UMA** (e somente uma) **instrução**, é opcional o uso das chaves (`{}`) e `return`:
 ```javascript
 // const exemplo = (parâmetro(s)) => retorno
 const somar = (a, b) => a + b;
