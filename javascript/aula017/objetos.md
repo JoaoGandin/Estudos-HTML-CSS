@@ -6,6 +6,7 @@ Esses "valores", chamamos de propriedades.
 - **Key** é o que vamos usar para identificar algo no objeto. Como se fosse o índice do array (0, 1, 2...), porém com nomes.
 - **Valor** é o dado que vai ter na Key
 - **Propriedade** de um objeto é a Key + Valor.
+
 **Exemplo:** 
 ```javascript
 const carro = {marca:"Fiat", ano:2005} 
@@ -39,6 +40,7 @@ buzina() { alert("Bii") }
 
 ## Objetos Não Literais (Instanciados)
 São objetos criados a partir de um "molde" (uma Classe ou uma Função Construtora) usando a palavra-chave `new`. 
+
 **Exemplo da IA:**
 ```javascript
 class Carro {
@@ -66,4 +68,5 @@ meuCarro.ligar(); // Chamando o método
 
 Obs.:
 No objeto literal, você separa as propriedades com vírgula (,).
+
 Já dentro da Classe (objeto não literal), você não usa vírgula entre o constructor e os métodos.
