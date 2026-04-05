@@ -3,7 +3,7 @@ Arrow Functions é uma forma concisa de escrever funções no JavaScript e ofere
 Especialmente útil para funções anônimas.
 Utilizando a sintaxe `() => {}`
 
-Normalmente trabalhamos com constantes `const` nas funções, para que não possam ser repetidas.
+Normalmente trabalhamos com constantes (`const`) nas funções, para que não possam ser repetidas.
 Exemplo da sintaxe:
 ```javascript
 const nomeDaFuncao = (param1, param2, param3) => {
@@ -12,19 +12,19 @@ const nomeDaFuncao = (param1, param2, param3) => {
 ```
 ---
 Mas podemos simplificar as Arrow Functions:
-- Quando tem **APENAS UMA** (e somente uma) **instrução**, é opcional o uso das chaves `{}`:
+- Quando tem **APENAS UMA** (e somente uma) **instrução**, é opcional o uso das chaves (`{}`):
 ```javascript
 // const exemplo = (parâmetro(s)) => retorno
 const somar = (a, b) => a + b;
 ```
 ---
-- Quando ela tem **APENAS UM** (e somente um) **parâmetro** só, é opcional o uso dos parênteses `()`:
+- Quando ela tem **APENAS UM** (e somente um) **parâmetro**, é opcional o uso dos parênteses (`()`):
 ```javascript
 // const exemplo = parâmetro => retorno
 const somarCom2 = a => a + 2;
 ```
 ---
-- Se não pedir nenhum, utiliza os parênteses **vazio**:
+- Se não pedir nenhum parâmetro, utiliza os parênteses **vazio**:
 ```javascript
 const diaDoMesVersao2 = () => (new Date()).getDate();
 ```
