@@ -1,6 +1,7 @@
 # Objetos
 Objetos são basicamente variáveis com muitos "valores" dentro.
 Esses "valores", chamamos de propriedades.
+É ideal para descrever uma entidade única com características diferentes. Você acessa os valores por rótulos (chaves/key).
 
 ### Key, Valor e Propriedade
 - **Key** é o que vamos usar para identificar algo no objeto. Como se fosse o índice do array (0, 1, 2...), porém com nomes.
