@@ -65,6 +65,34 @@ if (alunos.includes("João")) {
 
 ```
 ---
+- **.sort():** Organiza em ordem crescente(0 a n ou A a Z).
+```javascript
+const frutas = ["Maçã", "Abacate", "Uva"];
+frutas.sort();
+console.log(frutas); // ["Abacate", "Maçã", "Uva"]
+```
+**Observação:** Se você usar o .sort() em números sem passar uma instrução, ele transforma os números em texto e ordena pelo primeiro algarismo. Exemplo:
+```javascript
+const numeros = [10, 2, 1, 20];
+numeros.sort();
+
+console.log(numeros); // [1, 10, 2, 20] <-- Errado! (O 10 veio antes do 2)
+```
+Então, para ordenar números corretamente, você precisa passar uma função de comparação dentro dele:
+```javascript
+const numeros = [10, 2, 1, 20];
+
+// Ordem Crescente:
+numeros.sort((a, b) => a - b); 
+console.log(numeros); // [1, 2, 10, 20]
+
+// Ordem Decrescente:
+numeros.sort((a, b) => b - a);
+console.log(numeros); // [20, 10, 2, 1]
+
+```
+---
+
 ## Propriedades
 - **.length:** Diz **quantos** itens existem na lista.
 ```javascript
