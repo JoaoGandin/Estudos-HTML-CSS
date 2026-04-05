@@ -25,10 +25,10 @@ const carro = {
                 modelo:"Uno",
                 ano:2005,
                 placa:"ABC-1234",
-                buzina: function() {alert("Biiiiiiiiiii")}
+                buzina(){alert("Biiiiiiiiiii")} //método
 } 
 ```
-No exemplo acima eu usei uma function anonima de valor para a buzina, isso é possível e o nome correto é **método**, ou seja, é um método de um objeto.
+Note que a propriedade buzina executa uma ação. Sempre que uma propriedade de um objeto é uma função, damos a ela o nome de método. Atualmente, a forma mais comum de escrever isso é a sintaxe abreviada: `nomeDoMetodo() { }`, eliminando a necessidade de escrever function explicitamente.
 
 ## Objetos Não Literais (Instanciados)
-São objetos criados a partir de um "molde" (uma Classe ou uma Função Construtora) usando a palavra-chave `new`.
+São objetos criados a partir de um "molde" (uma Classe ou uma Função Construtora) usando a palavra-chave `new`. 
