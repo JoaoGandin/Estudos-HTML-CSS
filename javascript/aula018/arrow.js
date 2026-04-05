@@ -21,6 +21,22 @@ function diaDoMes(){
 // quando não tem parâmetro deixamos com parênteses vazio.
 const diaDoMesVersao2 = () => (new Date()).getDate();
 
+// apenas criando qualquer coisa nessa function para mostrar como fica uma arrow function com várias instruções
+function superFuncao(a, b){
+    let subtracao = a - b;
+    subtracao -= 2;
+    let diaDoMes = (new Date()).getDate();
+    return diaDoMes;
+}
+// em arrow function:
+const superFuncao2 = (a, b) => {
+    let subtracao = a - b;
+    subtracao -= 2;
+    let diaDoMes = (new Date()).getDate();
+    return diaDoMes;
+}
+
 
 console.log(diaDoMesVersao2());
 console.log(somar2versao2(2));
+console.log(superFuncao());
