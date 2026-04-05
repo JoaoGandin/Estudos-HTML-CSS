@@ -7,7 +7,7 @@ Variáveis são espaços em mémoria que nos possibilitam armazenar informaçõe
 - Não podem ser iguais as palavras reservadas da linguagem.
 ### Declaração de variáveis
 Temos três formas, atualmente, de declarar uma variável:
-<br>
+
 1- **let:** É a forma mais comum hoje em dia. Use quando você sabe que o valor da variável **pode mudar** durante a execução do script.
 
 Exemplo: Um contador de pontos em um jogo.
