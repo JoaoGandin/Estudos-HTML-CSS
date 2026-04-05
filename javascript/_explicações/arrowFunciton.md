@@ -22,5 +22,5 @@ Para executar:
 ```javascript
 console.log(somar(2,3)); // saída: 5
 console.log(somarCom2(2)); // saída: 4
-console.log(diaDoMesVersao2()); // saída: 4
+console.log(diaDoMesVersao2()); // saída: 5 (dia do mês atual de quando eu fiz)
 ```
