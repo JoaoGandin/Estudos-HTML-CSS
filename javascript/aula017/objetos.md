@@ -38,6 +38,16 @@ buzina: function() { alert("Bii") }
 buzina() { alert("Bii") }
 ```
 
+Para chamarmos alguma propriedade do objeto podemos fazer de 2 maneiras:
+- Utilizando o ".":
+```javascript
+console.log(carro.marca);
+```
+- Utilizando o "[""]":
+```javascript
+console.log(carro["marca"]);
+```
+
 ## Objetos Não Literais (Instanciados)
 São objetos criados a partir de um "molde" (uma Classe ou uma Função Construtora) usando a palavra-chave `new`. 
 

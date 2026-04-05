@@ -10,5 +10,9 @@ const carro = {
     modelo: "ka",
     ano:2015,
     placa:"ABC-1234",
-    buzina: function() {alert("Biiiiiiiiiii")}
+    buzina: function() {console.log("Biiiiiiiiiii")}
 };
+
+carro.buzina();
+console.log(carro.marca);
+console.log(carro["marca"]);
