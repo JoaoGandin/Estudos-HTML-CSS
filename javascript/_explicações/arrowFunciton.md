@@ -3,12 +3,12 @@ Arrow Functions é uma forma concisa de escrever funções no JavaScript, utiliz
 ```javascript
 const exemplo = () => {}
 ```
-Quando tem **APENAS UMA** (e somente uma) instrução, é opcional o uso das chaves `{}`:
+Quando tem **APENAS UMA** (e somente uma) **instrução**, é opcional o uso das chaves `{}`:
 ```javascript
 // const exemplo = (parâmetro(s)) => retorno
 const somar = (a, b) => a + b;
 ```
-Ou até mesmo, quando ela tem **APENAS UM** (e somente um) parâmetro só, é opcional o uso dos parênteses `()`:
+Ou até mesmo, quando ela tem **APENAS UM** (e somente um) **parâmetro** só, é opcional o uso dos parênteses `()`:
 ```javascript
 // const exemplo = parâmetro => retorno
 const somarCom2 = a => a + 2;
