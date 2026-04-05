@@ -67,6 +67,7 @@ meuCarro.ligar(); // Chamando o método
 ```
 
 Obs.:
-No objeto literal, você separa as propriedades com vírgula (,).
 
-Já dentro da Classe (objeto não literal), você não usa vírgula entre o constructor e os métodos.
+- No objeto literal, você separa as propriedades com vírgula (,).
+
+- Já dentro da Classe (objeto não literal), você não usa vírgula entre o constructor e os métodos.
