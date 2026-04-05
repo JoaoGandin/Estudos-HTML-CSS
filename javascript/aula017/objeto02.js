@@ -10,9 +10,15 @@ const carro = {
     modelo: "ka",
     ano:2015,
     placa:"ABC-1234",
-    buzina: function() {console.log("Biiiiiiiiiii")}
+    //buzina: function() {console.log("Biiiiiiiiiii")} <-- jeito antigo
+    buzina(){console.log("Biiiiiiiiiii")},
+    completo(){
+        // this seria tipo "esse" this object ou esse objeto, irei pegar o que está nesse objeto ou seja this.marca seria carro.marca
+        return `A marca é ${this.marca} e o modelo é ${this.modelo}`
+    }
 };
 
 carro.buzina();
 console.log(carro.marca);
-console.log(carro["marca"]);
+console.log(carro["placa"]);
+console.log(carro.completo());
