@@ -22,12 +22,18 @@ Objetos literais é a forma comum. É quando você já declara as propriedades e
 **Exemplo:**
 ```javascript
 const carro = {
-                marca:"Fiat",
-                modelo:"Uno",
-                ano:2005,
-                placa:"ABC-1234",
-                buzina(){alert("Biiiiiiiiiii")} //método
-} 
+    marca:"ford",
+    modelo: "ka",
+    ano:2015,
+    placa:"ABC-1234",
+    //buzina: function() {console.log("Biiiiiiiiiii")} <-- jeito antigo
+    buzina(){console.log("Biiiiiiiiiii")},
+    completo(){
+        // this seria tipo "esse" this object ou esse objeto, irei pegar o que está nesse objeto ou seja this.marca seria carro.marca
+        return `A marca é ${this.marca} e o modelo é ${this.modelo}`
+    }
+};
+
 ```
 Note que a propriedade buzina executa uma ação. Sempre que uma propriedade de um objeto é uma função, damos a ela o nome de método. Atualmente, a forma mais comum de escrever isso é a sintaxe abreviada: `nomeDoMetodo() { }`, eliminando a necessidade de escrever function explicitamente.
 ```javascript
