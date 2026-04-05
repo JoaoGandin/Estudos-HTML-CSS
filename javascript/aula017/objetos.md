@@ -29,6 +29,41 @@ const carro = {
 } 
 ```
 Note que a propriedade buzina executa uma ação. Sempre que uma propriedade de um objeto é uma função, damos a ela o nome de método. Atualmente, a forma mais comum de escrever isso é a sintaxe abreviada: `nomeDoMetodo() { }`, eliminando a necessidade de escrever function explicitamente.
+```javascript
+// Estilo antigo:
+buzina: function() { alert("Bii") }
+
+// Estilo moderno (Shorthand):
+buzina() { alert("Bii") }
+```
 
 ## Objetos Não Literais (Instanciados)
 São objetos criados a partir de um "molde" (uma Classe ou uma Função Construtora) usando a palavra-chave `new`. 
+**Exemplo da IA:**
+```javascript
+class Carro {
+  constructor(marca, modelo) {
+    // O 'this' aponta para o carro que está sendo criado naquele momento.
+    // Se eu criar um 'Uno' e um 'Gol', o 'this' do Uno não mexe no Gol.
+    this.marca = marca;
+    this.modelo = modelo;
+    this.ligado = false; // Propriedade com valor padrão
+  }// <--- SEM VÍRGULA AQUI!
+
+  // Isso é um MÉTODOO (a função dentro do objeto)
+  ligar() {
+    this.ligado = true;
+    console.log(`O ${this.modelo} está roncando o motor... VRUM!`);
+  }// <--- SEM VÍRGULA AQUI!
+}
+
+// Criando um objeto não literal (instância)
+const meuCarro = new Carro("Fiat", "Uno");
+
+meuCarro.ligar(); // Chamando o método
+
+```
+
+Obs.:
+No objeto literal, você separa as propriedades com vírgula (,).
+Já dentro da Classe (objeto não literal), você não usa vírgula entre o constructor e os métodos.
