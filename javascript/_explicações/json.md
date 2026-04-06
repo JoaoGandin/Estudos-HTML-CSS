@@ -8,12 +8,12 @@
 OBS.: Já que ele é parecido com o objeto em JavaScript, a diferença que na criação da key ela TEM que estar entre **aspas duplas** e depois vem os dois pontos. 
 Exemplo {"nome":"João"}
 ## Tipos de Dados em JSON
-- **String:** sempre com aspas duplas
-- **Números:**
-- **Booleans:**
-- **Objetos:**
-- **Arrays:**
-- **null:**
+- **String:** sempre entre aspas duplas, não pode aspas simples;
+- **Números:** números inteiros e float, não precisa de aspas;
+- **Booleans:** `true` ou `false`, não precisa de aspas;
+- **Objetos:** estão entre chaves `{}` a key tem que ser declarada entre aspas duplas e separada entre dois pontos com o valor;
+- **Arrays:** utiliza o colchete `[]` e pode ter valores misturados ("string", número, boolean) ou iguais, mas na prática, mantém igual;
+- **null:** vazio, não precisa de aspas duplas
 ## Funções
 - O JavaScript possui uma função integrada para converter **strings JSON** em **objetos JavaScript**:
 ```javascript
